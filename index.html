@@ -9,66 +9,124 @@
 
 <body>
   <a id="top"></a>
-  <!-- HEADER -->
+
+
+<!--------- HEADER -------->
   <header>
-    <h1><a href="index.html">Room 0</a></h1>
-    <!-- NAV BAR --> 
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="collections.html">Collections</a></li>
-        <li><a href="az.html">A-Z</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search...">
-      </form>
-    </nav>
-  </header>
+  <div class="header-inner">
+    <div class="header-left">
+      <h1><a href="index.html">Room 0</a></h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="az.html">A-Z</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!----------------------------> 
+
+<br><br>
 
   <main>
     <div style="text-align: center;">
-      <h2 style="font-size: 40px;">Welcome to Room 0</h2>
-    <br><br>
+      <h2 style="font-size: 40px; color:#2e6139;">Welcome to Room 0</h2>
 
-      <div style="text-align: center;">
-        <img src="images/nothingtoseehere.png" alt="placeholder" width="100" height="auto">
-      </div>
+      <p><i>An Archive of Intimate Effects, Carefully Arranged</i></p>
+      <br><br>
+      <p>Room 0 — a digital still life where memory, object, and self meet. This archive is rooted in the idea that spaces, like a bedroom, become a record — of objects kept, moments noticed, and meaning made through arrangement.</p>
+      <br>
 
-<br>
-      <p>An Archive of Intimate Effects, Carefully Arranged</p>
-      <br><br><br>
+      <a href="about.html" class="intro-button">Learn More...</a>
+      <br><br><br><br><br>
+
     </div>
   </main>
 
   <a href='index'>
 </a>
 
-<div style="text-align: center;">
-  <h3>About</h3>
-    <img src="images/nothingtoseehere.png" width="300" height="auto">
-  <!-- brief and informative introduction/explanation to the site. link to the 'about' page too --> 
-  <br><br>
-  <h3>What's On?</h3>
-    <img src="images/nothingtoseehere.png" width="300" height="auto">
-  <!--display for new artifacts/artifacts that have content with them now/update artifacts/ones that you want viewers to see first -->
-  <br><br>
-  <h3>Browse by Category</h3>
-    <img src="images/nothingtoseehere.png" width="300" height="auto">
-  <br><br>
-  <h3>More from Me</h3>
-    <img src="images/nothingtoseehere.png" width="300" height="auto">
-  <!-- link to wix -->
-</div>
+<!----- WHATS ON?: display for recent items added, or items you want users to view most --> 
+<section class="whats-on">
+  <h1 style="color:#2e6139; font-size:35px; text-align:center;">What's On?</h1>
+   <div class="featured-items">
+
+    <div class="item-card">
+      <img src="images/sweaters-dartmouth.png" alt="Darthmouth Basketball Crewneck" style="transform: rotate(270deg)">
+      <a href="collections/clothes/dartmouth.html">
+      <h4>Dartmouth Basketball Crewneck</h4>
+    </a>
+    </div>
+
+    <div class="item-card">
+      <img src="images/electronics-digital.png" alt="Panasonic 'Lumix' Digital Camera">
+        <a href="collections/panasonic.html">
+        <h4>Panasonic <i>Lumix</i> Digital Camera</h4>
+      </a>
+     </div>
+
+    <div class="item-card">
+      <img src="images/sweaters-nhl.png" alt="NHLPA Crewneck" style="transform: rotate(270deg)">
+        <a href="collections/clothes/nhlpa.html">
+          <h4>NHLPA Crewneck</h4>
+        </a>
+      </div>
+  </div>
+</section>
+
+  <!----------------------------------------------------->
+
+<!------------- STEP INSIDE: browse by category ----------->
+<section class="category-box-vertical">
+  <h2 style="color:#2e6139; font-size:35px; text-align:center;">Step Inside...</h2>
+  <h3 style="font-weight:normal; text-align:center;"><i>begin exploring by category</i></h3>
+  <br>
 
 
-<br> <br> <br> <br>
+  <div class="category-vertical-scroll">
+
+    <a href="collections/clothes.html" class="category-card-vertical">
+      <img src="images/clothes.png" alt="Clothes & Accessories">
+      <span style="font-size: 25px;">Clothes & Accessories</span>
+    </a>
+
+    <a href="collections/electronics.html" class="category-card-vertical">
+      <img src="images/electronics.png" alt="Electronics">
+      <span style="font-size: 25px;">Electronics</span>
+    </a>
+
+    <a href="collections/music.html" class="category-card-vertical">
+      <img src="images/vinyltitle.png" alt="Photos">
+      <span style="font-size: 25px;">Music</span>
+    </a>
+
+   <a href="collections/sweaters.html" class="category-card-vertical">
+      <img src="images/sweaterstitle.png" alt="Sweaters">
+      <span style="font-size: 25px;">Sweaters</span>
+    </a>
+
+   <a href="collections/bags.html" class="category-card-vertical">
+      <img src="images/bagstitle.png" alt="Bags">
+      <span style="font-size: 25px;">Bags</span>
+    </a>
 
 
 
-<a href="#top" class="nav-button"> ↑ Back to Top</a>
+  </div>
+</section>
+<!-----------------------------------------------> 
+
+<br><br><br><br><br>
+
 
 <!-- FOOTER -->
+
+<a href="#top" class="nav-button"> ↑ Back to Top</a>
 
   <footer>
   <div class="footer-content">
@@ -91,7 +149,7 @@
   <p class="footer-copy">&copy; 2025 Room 0. All rights reserved.</p>
 </footer>
 
+<!----------------- -->
 
-  
 </body>
 </html>

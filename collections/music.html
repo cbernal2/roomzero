@@ -3,37 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Books- Room 0</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Music - Room 0</title>
+  <link rel="stylesheet" href="/Room0/style.css">
+
+    <!-- I had to override style.css with inline CSS to fix design bug for this page specifically --> 
+    <style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  .image-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+
+  .image-card {
+    text-align: center;
+  }
+</style>
+
+ 
 </head>
 
 <body>
 
-<!------- HEADER -------- -->
+<a id="top"></a>
+    
+  <!--------- HEADER -------->
   <header>
-    <h1><a href="collections.html">Room 0</a></h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../collections.html" class="active">Collections</a></li>
-        <li><a href="../az.html">A-Z</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search...">
-      </form>
-    </nav>
-  </header>
-<!----------------------- --> 
+  <div class="header-inner">
+    <div class="header-left">
+      <h1><a href="../index.html">Room 0</a></h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html" >About</a></li>
+          <li><a href="../collections.html" class="active">Collections</a></li>
+          <li><a href="../az.html">A-Z</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!----------------------------> 
+
+<br><br>
+
 <!-- BACK BUTTON --> 
-<div class="back-button">
+  <div class="back-button"  style="margin-left: 170px;">
     <a href="javascript:history.back()">← Back</a>
-</div>
+  </div>
 <!---------------- --> 
 
+
   <main>
+<!------- TITLE -------------> 
+
   <div style="text-align: center;">
-    <h2 style="font-size: 30px;">Explore Artifacts by Category</h2>
+    <h2 style="font-size: 30px;">Music</h2>
+  </div>
+
+  <br>
+
+  <div class="image-grid">
+
+  <!-- ABBA'S GREATEST HITS PAGE --> 
+
+    <div class="image-card">
+      <a href="abba1.html" class="card-link">
+        <img src="../images/vinyl-abba1.png" alt="Abba's Greatest Hits (1975) Vinyl" style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b>Abba's Greatest Hits (1975)</b></h3>
+        </a>
+    </div>
+
+
+  <!-- ABBA'S GREATEST HITS VOL.2  PAGE -->
+
+    <div class="image-card">
+      <a href="abba2.html" class="card-link">
+        <img src="../images/vinyl-abba2.png" alt="Abba's Greatest Hits Vol.2 Vinyl"  style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b>Abba's Greatest Hits Vol.2</b></h3>
+      </a>
+    </div>
+
+  <!-- ENTERGALACTIC PAGE --> 
+
+    <div class="image-card">
+      <a href="cudi.html" class="card-link">
+        <img src="../images/vinyl-cudi.png" alt="'Entergalactic' Vinyl by Kid Cudi"  style="transform:rotate(360deg);">
+          <h3 style="font-size: 20px;"><b><i>Entergalactic</i> by Kid Cudi</b></h3>
+      </a>
+    </div>
+
+  <!--- FCOL! PAGE --------> 
+
+    <div class="image-card">
+      <a href="fcol.html" class="card-link">
+        <img src="../images/vinyl-FCOL.png" alt="'For Cryin' Out Loud! Vinyl by FINNEAS" style="transform:rotate(180deg);">
+          <h3 style="font-size: 20px;"><b><i>For Cryin' Out Loud!</i> by Finneas</b></h3>
+      </a>
+    </div>
+
+
+  <!-- HIT ME HARD AND SOFT PAGE --> 
+
+    <div class="image-card">
+      <a href="hmhas.html" class="card-link">
+        <img src="../images/vinyl-HHAS.png" alt="'Hit Me Hard and Soft' Vinyl by Billie Eilish"  style="transform:rotate(180deg);">
+          <h3 style="font-size: 20px;"><b><i>Hit Me Hard and Soft</i> by Billie Eilish</b></h3>
+      </a>
+    </div>
+
+  <!-- KIDS PAGE --> 
+
+    <div class="image-card">
+      <a href="kids.html" class="card-link">
+        <img src="../images/vinyl-KIDS.png" alt="'KIDS' Vinyl by Mac Miller"  style="transform:rotate(180deg);">
+          <h3 style="font-size: 20px;"><b><i>KIDS</i> by Mac Miller</b></h3>
+      </a>
+    </div>
+
+  <!-- NOTHING HAPPENS PAGE --> 
+
+    <div class="image-card">
+      <a href="wallows.html" class="card-link">
+        <img src="../images/vinyl-wallows.png" alt="'Nothing Happens' Vinyl by Wallows" style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b><i>Nothing Happens</i> by Wallows</b></h3>
+      </a>
+    </div>
+
+  <!-- THE GOOD & THE BAD PAGE --> 
+
+    <div class="image-card">
+      <a href="tgatb.html" class="card-link">
+        <img src="../images/vinyl-TGATB.png" alt="'The Good & The Bad' Vinyl by Anthony Ramos" style="transform:rotate(90deg);">
+          <h3 style="font-size: 20px;"><b><i>The Good & The Bad</i> by Anthony Ramos</b></h3>
+      </a>
+    </div>
+
+
+  <!-- STAR WARS PAGE --> 
+
+    <div class="image-card">
+      <a href="starwars.html" class="card-link">
+        <img src="../images/vinyl-starwars.png" alt="'The Story of Star Wars from the Original Soundtrack' Vinyl" style="transform:rotate(90deg);">
+          <h3 style="font-size: 20px;"><b><i>The Story of Star Wars</i> from the Original Soundtrack</b></h3>
+      </a>
+    </div>
+
+  <!-- WHEN WE ALL FALL ASLEEP PAGE --> 
+
+    <div class="image-card">
+      <a href="wwafa.html" class="card-link">
+        <img src="../images/vinyl-WWAFA.png" alt="'When We All Fall Asleep, Where Do We Go?' Vinyl by Billie Eilish" style="transform:rotate(90deg);">
+          <h3 style="font-size: 20px;"><b><i>When We All Fall Asleep, Where Do We Go?</i> by Billie Eilish</b></h3>
+      </a>
+    </div>
+  
   </div>
 
 
@@ -43,6 +177,16 @@
 
 
 
+<br><br><br><br>
+
+<!--- BACK TO TOP, NEXT PAGE BUTTONS -->
+
+<div class="nav-button-row">
+  <a href="#top" class="nav-button">↑ Back to Top</a>
+  <a href="clothes.html" class="nav-button next-button">Next Page →</a>
+</div>
+<!-------------------------------------> 
+
 
 <!-- FOOTER -->
 
@@ -51,14 +195,14 @@
     
     <!-- Left column: vertical nav -->
     <nav class="footer-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="collections.html">Collections</a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../collections.html">Collections</a>
     </nav>
 
-    <!-- Right column: site title -->
+    <!-- Right column: Room 0 -->
     <div class="footer-site-name">
-      <a href="index.html">Room 0</a>
+      <a href="../index.html">Room 0</a>
     </div>
 
   </div>

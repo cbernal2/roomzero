@@ -4,37 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bags- Room 0</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="/Room0/style.css">
+
+    <style> 
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        align-items: start;
+      }
+      .image-card img { 
+        max-width: 100%;
+        height: auto;
+        display: block;
+       }
+
+      .image-card {
+        text-align: center;
+      }
+      /* I had to override CSS grid styling on this page specifically due to styling errors */
+    </style>
+  </link>
 </head>
 
 <body>
 
-<!------- HEADER --------- --> 
+<a id="top"></a>
+    
+  <!--------- HEADER -------->
   <header>
-    <h1><a href="collections.html">Room 0</a></h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../collections.html" class="active">Collections</a></li>
-        <li><a href="../az.html">A-Z</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search...">
-      </form>
-    </nav>
-  </header>
-  <br>
-<!------------------------- --> 
+  <div class="header-inner">
+    <div class="header-left">
+      <h1><a href="../index.html">Room 0</a></h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html" >About</a></li>
+          <li><a href="../collections.html" class="active">Collections</a></li>
+          <li><a href="../az.html">A-Z</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!----------------------------> 
+
+<br><br>
+
+<!-- BACK BUTTON --> 
+  <div class="back-button"  style="margin-left: 170px;">
+    <a href="javascript:history.back()">← Back</a>
+  </div>
+<!---------------- --> 
 
   <main>
+
+<!--------- TITLE --------------> 
   <div style="text-align: center;">
     <h2 style="font-size: 30px;">Bags</h2>
+  </div>
+
+<br>
+  
+<div class="image-grid">
+
+  <!-- COACH BAG PAGE --> 
+
+    <div class="image-card">
+      <a href="clothes/coach.html" class="card-link">
+        <img src="../images/bags-coach.png" alt="Coach Tote Bag" width="400" height="auto" style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b>Coach Tote Bag</b></h3>
+        </a>
+    </div>
+
+   <!-- CLUB MONACO BAG PAGE --> 
+
+    <div class="image-card">
+      <a href="clothes/monaco.html" class="card-link">
+        <img src="../images/bags-monaco.png" alt="Club Monaco Tote Bag" width="400" height="auto" style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b>Club Monaco Bag</b></h3>
+        </a>
+    </div>
+
+   <!-- LACOSTE BAG --> 
+
+    <div class="image-card">
+      <a href="clothes/lacoste.html" class="card-link">
+        <img src="../images/bags-lacoste1.png" alt="Lacoste Tote Bag" width="600" height="auto" style="transform:rotate(180deg);">
+          <h3 style="font-size: 20px;"><b>Lacoste Purse</b></h3>
+        </a>
+    </div>
+
+   <!-- LULULEMON DUFFLE BAG PAGE --> 
+
+    <div class="image-card">
+      <a href="clothes/lulu.html" class="card-link">
+        <img src="../images/bags-lulu.png" alt="Lululemon Duffle Bag" width="400" height="auto" style="transform:rotate(360deg);">
+          <h3 style="font-size: 20px;"><b>Lululemon Duffle Bag</b></h3>
+        </a>
+    </div>
+
+   <!-- SMALL POLO BAG PAGE --> 
+
+    <div class="image-card">
+      <a href="clothes/polo1.html" class="card-link">
+        <img src="../images/bags-polo1.png" alt="Small Polo Bag" width="400" height="auto" style="transform:rotate(360deg);">
+          <h3 style="font-size: 20px;"><b>Small Polo Bag</b></h3>
+        </a>
+    </div>
+
+ <!-- POLO TOTE BAG PAGE --> 
+
+    <div class="image-card">
+      <a href="clothes/polo2.html" class="card-link">
+        <img src="../images/bags-polo2.png" alt="Polo Tote Bag" width="400" height="auto" style="transform:rotate(270deg);">
+          <h3 style="font-size: 20px;"><b>Polo Tote Bag</b></h3>
+        </a>
+    </div>
+
   </div>
 
 
 
 
+<!--- BACK TO TOP, NEXT PAGE BUTTONS -->
+
+<div class="nav-button-row">
+  <a href="#top" class="nav-button">↑ Back to Top</a>
+  <a href="monaco.html" class="nav-button next-button">Next Page →</a>
+</div>
+<!-------------------------------------> 
 
 
 <!-- FOOTER -->
@@ -44,14 +146,14 @@
     
     <!-- Left column: vertical nav -->
     <nav class="footer-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="collections.html">Collections</a>
+      <a href="../../index.html">Home</a>
+      <a href="../../about.html">About</a>
+      <a href="../../collections.html">Collections</a>
     </nav>
 
     <!-- Right column: site title -->
     <div class="footer-site-name">
-      <a href="index.html">Room 0</a>
+      <a href="../../index.html">Room 0</a>
     </div>
 
   </div>
@@ -59,7 +161,6 @@
   <!-- Bottom center copyright -->
   <p class="footer-copy">&copy; 2025 Room 0. All rights reserved.</p>
 </footer>
-
 
   
 </body>
